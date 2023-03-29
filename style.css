@@ -1,0 +1,146 @@
+/* font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7e4d4;
+}
+
+.main-box {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    width: 480px;
+
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 48px;
+
+    color: #467745;
+}
+
+input.first {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    width: 480px;
+    height: 64px;
+
+    padding-left: 15px;
+
+    color: #467745;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    max-width: 480px;
+    max-height: 120px;
+
+    min-width: 480px;
+    min-height: 120px;
+
+    padding-top: 15px;
+    padding-left: 15px;
+
+    color: #467745;
+
+    margin-top: 30px;
+
+    border: none;
+}
+
+ input {
+    height: 16px;
+    width: 16px;
+    border: none;
+
+
+    margin-top: 30px;
+    margin-bottom: 2px;
+} 
+
+label {
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #467745;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    gap: 15px;
+}
+
+button {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 21px;
+
+    width: 280px;
+    height: 80px;
+    
+    background-color: #467745;
+    color: #f7e4d4;
+
+    letter-spacing: 0.2em;
+
+    border-radius: 50px;
+    border: none;
+
+    margin-top: 50px;
+}
+
+span {
+    text-decoration: underline solid #467745 1px;
+}
+
+@media(max-width: 520px){
+    .main-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1 {
+        font-size: 36px;
+        width: calc(100%);
+    }
+    input.first {
+        width: calc(100%);
+    }
+    textarea {
+        min-width: calc(100%);
+    }
+    .box {
+        width: calc(100%);
+    }
+    .square {
+        margin-bottom: 10px;
+        min-height: 16px;
+        min-width: 16px;
+    }
+}
